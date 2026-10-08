@@ -1212,3 +1212,26 @@ a:hover {
 .contact-details i {
     margin-right: 6px;
 }
+
+/* Logo banner for projects without a screenshot */
+.project-card .banner-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  aspect-ratio: 2.2 / 1;
+  background: radial-gradient(circle at center, #3a1205 0%, #140602 70%);
+}
+
+.project-card .banner-logo img {
+  width: 90px;
+  height: 90px;
+}
+
+.project-card .banner-logo span {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
