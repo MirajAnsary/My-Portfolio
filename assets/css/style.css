@@ -375,8 +375,32 @@ a:hover {
 
 #hero {
   position: relative;
-  padding: 160px 0px 50px 0px;
+  display: flex;
+  align-items: center;
+  padding: 120px 0px 80px 0px;
   min-height: 100vh;
+}
+
+#hero > .container {
+  width: 100%;
+}
+
+@media (min-width: 577px) {
+  #hero {
+    background:
+      linear-gradient(90deg, rgba(4, 9, 28, 0.92) 0%, rgba(4, 9, 28, 0.75) 38%, rgba(4, 9, 28, 0) 62%),
+      url(../images/miraj-hero.jpg) 72% 30% / cover no-repeat;
+  }
+
+  #hero .h3,
+  #hero .btn-showcase,
+  #hero .social-icons a {
+    color: #fff;
+  }
+
+  #hero .tagline {
+    color: #d3d8ec;
+  }
 }
 
 #hero .name {
@@ -415,17 +439,6 @@ a:hover {
   color: var(--muted-text);
 }
 
-.hero-portrait .pic {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 45vw;
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-image: url(../images/Miraj\ Ansary.png);
-}
 
 @media (max-width: 576px) {
   #hero {
@@ -454,10 +467,11 @@ a:hover {
 
   .hero-portrait .pic {
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    height: 100%;
+    background-size: 340%;
+    background-position: 74% 27%;
     background-repeat: no-repeat;
-    background-image: url(../images/Miraj\ Ansary.png);
+    background-image: url(../images/miraj-hero.jpg);
   }
 
   .hero-content {
