@@ -392,14 +392,22 @@ a:hover {
       url(../images/miraj-hero.jpg) 72% 30% / cover no-repeat;
   }
 
-  #hero .h3,
-  #hero .btn-showcase,
-  #hero .social-icons a {
+  body #hero .h3,
+  body #hero .btn-showcase,
+  body #hero .social-icons a {
     color: #fff;
   }
 
-  #hero .tagline {
+  body #hero .social-icons a:hover {
+    color: var(--tertiary-color);
+  }
+
+  body #hero .tagline {
     color: #d3d8ec;
+  }
+
+  body #hero .secondary-bg-btn {
+    color: #fff;
   }
 }
 
