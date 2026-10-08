@@ -1087,3 +1087,111 @@ a:hover {
   transform: translate(0, -0.25rem) rotate(0) skewX(0) skewY(0) scaleX(1)
     scaleY(1);
 }
+
+/*--------------------------------------------------------------
+# Education Section
+--------------------------------------------------------------*/
+
+#education {
+  padding: 100px 0px;
+}
+
+.education-card {
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  padding: 18px;
+  border-radius: 24px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+  -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, 0.5),
+    0 0 0.5px 0.5px rgba(141, 53, 229, 0.336);
+}
+
+.education-card .circle {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--primary-gradient-color);
+}
+
+.education-card .circle i {
+  font-size: 1.7rem;
+}
+
+.education-card .education-year {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--tertiary-color);
+}
+
+.education-card .card-title {
+  font-size: 17px;
+  margin: 4px 0px;
+}
+
+.education-card .card-text {
+  font-size: 14px;
+  color: var(--muted-text);
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Project Cards without a screenshot
+--------------------------------------------------------------*/
+
+.project-card {
+  height: 100%;
+}
+
+.project-card .banner-container {
+  margin-top: auto;
+}
+
+.project-card .project-points {
+  padding-left: 1.1rem;
+}
+
+.project-card .project-points li {
+  margin-bottom: 4px;
+}
+
+.project-card .icon-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  color: #fff;
+  background: var(--primary-gradient-color);
+}
+
+.project-card .banner-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  aspect-ratio: 2.2 / 1;
+  color: #fff;
+  background: var(--primary-gradient-color);
+}
+
+.project-card .banner-placeholder i {
+  font-size: 2.5rem;
+}
+
+.project-card .banner-placeholder span {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
